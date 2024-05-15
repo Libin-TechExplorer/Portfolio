@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* New background color */
+        }
+        header {
+            background-color: #008C8D;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+           
+           
+            
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        header h3 {
+            margin: 10px 0 0;
+            font-size: 18px;
+        }
+        nav {
+            background-color: #54c4c1;
+            padding: 10px 0;
+            text-align: center;
+           
+        }
+        nav a {
+            color: #070202;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .dropdown-btn {
+            display: none; /* Initially hidden on larger screens */
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            right: 10px;
+            top: 50px;
+        }
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            padding: 20px;
+            text-align: left;
+        }
+        .section-box {
+            border: 2px solid #54C4C1;
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px rgb(148, 219, 230);
+        }
+        footer {
+            background-color: #54C4C1;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Media query for mobile devices */
+        @media screen and (max-width: 600px) {
+            nav {
+                position: relative;
+                background-color: #54C4C1;
+                width: 100%;
+            }
+            nav a {
+                display: none;
+            }
+            .dropdown-btn {
+                display: inline-block;
+                color: #fff;
+                background-color: #54C4C1;
+                border: none;
+                cursor: pointer;
+                padding: 10px 20px;
+                font-size: 16px;
+                margin: 0 10px;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #008C8D;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+                z-index: 1;
+                right: 10px;
+                top: 50px;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Libin ML</h1>
+        <h3>Productivity Enthusiast | Daily Journalist</h3>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#courses">Courses</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#papers">Papers Published</a>
+        <a href="#contact">Contact</a>
+        <button class="dropdown-btn" onclick="toggleMenu()">Menu</button>
+        <div class="dropdown-content" id="dropdown-content">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#courses">Courses</a>
+            <a href="#skills">Skills</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#papers">Papers Published</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <section id="about" class="section-box">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I'm Libin ML , 
+            a passionate and driven individual currently pursuing a bachelor of Electrical and Electronics Engineering at Stella Mary's College of Engineering. 
+            With a keen interest in technology and a thirst for knowledge,I constantly seek to expand my skill set and make meaningful contributions in the world of software development and project management.
+            Outside of academics and technical pursuits, I am deeply passionate about productivity, self-improvement, and continuous learning. 
+            I believe in the power of books to inspire and educate, and I'm always eager to dive into the latest literature on personal development and productivity.<br>
+
+            <br>In everything I do, I strive for excellence and embrace challenges as opportunities for growth. I am excited about the future and eager to embark on new adventures in the world of technology and beyond.
+        
+            Thank you for taking the time to explore my portfolio. Feel free to reach out—I'm always open to new opportunities, collaborations, and conversations!</p>
+    </section>
+    <section id="experience" class="section-box">
+        <h2>Experience</h2>
+        <h3>Student President | Electrical and Electronics Department Association </h3>
+        <p><b>Period:</b>March 2024 - April 2024 | <b>Location:</b>Stella Mary's College of Engineering<br>
+        <ul>
+            <li>Orchestrated the organization of the "International Conference on Modern Trends in Engineering and Management" alongside a dedicated team.</li><br>
+            <li>Developed leadership, event management, and organizational skills through active participation.</li><br>
+            <li>Demonstrated adeptness in leading large-scale events, boosting confidence upon successful completion of the conference.</li>
+        </ul>
+        </p>
+        <h3>Student work | College Magazine</h3>
+        <p><b>Duration:</b>March 2023-April 2024 | <b>Location:</b>Stella Mary's College of Engineering<br>
+        <ul>
+            <li>Contributed to the design and publication of department magazines for both the department Symposium and International Conference.</li><br>
+            <li>Collaborated with teams of 7 and 6 members respectively to ensure successful creation and delivery of the magazines.</li><br>
+            <li>Developed proficiency in designing using Canva, honed leadership skills through team management, and gained experience in coordinating printing processes.</li><br>
+            <li>Played a key role in enhancing the visual appeal and content quality of the magazines, contributing to the success of the department events.</li></ul></p>
+        <h3>Intership</h3>
+        <p><b>Duration:</b>February 2023- April 2023 (5 Saturdays) | <b>Company:</b>Cad-Desk, Nagercoil<br>
+        <ul>
+            <li> Developed a comprehensive understanding of project management methodologies and techniques.</li><br>
+        <li>Streamlined project workflows resulting in a 20% increase in task completion rate.</li><br>
+        <li>Successfully applied acquired project management skills to personal projects, leading to enhanced efficiency and productivity in various endeavors.</li></ul></p>
+        
+        <h3>Student Volunteer | College Symposium</h3>
+        <p><b>Duration:</b>April 2023 | <b>Location:</b>Stella Mary's College of Engineering<br>
+        <ul>
+            <li>Successfully coordinated the creation and organization of the quiz competition for participants.</li><br>
+            <li>Improved communication and teamwork abilities through effective collaboration with the quiz club team.</li><br>
+            <li>Strengthened creativity and confidence levels, leading to enhanced performance both personally and professionally.</li>
+        </ul>
+        </p>
+    </section>
+    <section id="projects" class="section-box">
+        <h2>Projects</h2>
+        <h3>Electric Bicycle Integration Project | Academic Project</h3>
+        <p><b>Duration:</b>January 2024 - May 2024 | <b>Role:</b> Lead Developer | <b>Tech Stack:</b>Arduino IDE, C/C++, Arduino.h Library<br>
+           
+            <ul><li>Led the design and implementation of an innovative electric bicycle system aimed at revolutionizing urban transportation.</li><br>
+
+                <li>Conceptualized and supervised the development of the system from ideation to implementation, focusing on integrating dual battery systems for extended range and reliability.</li><br>
+
+                    <li>Conducted thorough performance evaluations, optimized system design for robust performance and user safety, and presented project outcomes through technical reports and journal papers.</li></ul>
+        </p>
+        <h3>To-Do List Webpage | Personal project</h3>
+        <p><b>Duration:</b>January 2024(2 days) | <b>Tech Stack:</b>HTML, CSS, JavaScript | <b>Link: </b>https://libin-techexplorer.github.io/To-Do-List/Index.html<br>
+            <ul>
+            <li>Developed a dynamic to-do list webpage using ChatGPT, designed to enhance productivity by efficiently organizing tasks and priorities in a user-friendly interface.</li><br> 
+            <li>Utilized ChatGPT to generate code for seamless integration of features, empowering users to manage their daily tasks effectively.</li></ul></p>
+        <h3>Weather Status Webpage | Personal Project</h3>
+        <p><b>Duration:</b>January 2024(7 days) | <b>Tech Stack:</b>HTML, CSS, JavaScript | <b>Link: </b>https://libin-techexplorer.github.io/Weather-Status/<br>
+            <ul><li>Created a dynamic webpage using HTML, CSS, and JavaScript to display weather information for a given location.</li><br>
+            
+                <li>Solely responsible for the design, development, and implementation of the weather webpage project.</li><br>
+            
+                    <li>Enhanced proficiency in ChatGPT, gained valuable experience in front-end development, and improved skills in designing and creating webpages.</li></ul></p>
+            <h3>Fisherman Border Crossing Alert System | Mini Project</h3>
+        <p><b>Duration:</b>April 2023 | <b>Role:</b>Documentation Support | <b>Tech Stack:</b>ChatGPT, MS word<br>
+           
+            <ul><li>Utilized ChatGPT to create various project documents such as reports and journal papers.</li><br>
+
+                <li>Played a pivotal role in creating project documentation, including reports and journal papers, leveraging ChatGPT technology.</li><br>
+
+                    <li>Enhanced proficiency in ChatGPT and MS Word, resulting in improved skills in document creation and management.</li></ul>
+        </p>
+        </section>
+    <section id="courses" class="section-box">
+        <h2>Courses</h2>
+        <h3>Python</h3><p><ul>
+            <li>Completed an extensive Python course covering fundamental concepts, 
+            data structures, and algorithms.</li><br><li> Acquired proficiency in Python programming language, 
+            including its application in various domains such as web development, data analysis, and automation.</li></ul></p>
+            <h3>Project Management Foundation</h3><p><ul>
+                <li>Acquired essential project management skills and knowledge through active participation in the course.</li><br>
+                <li> Gained a solid foundation in project management principles and methodologies, enhancing my ability to lead and manage projects effectively.</li></ul></p>
+        <h3>Mindfullness in Project Management</h3><p><ul><li>Successfully completed a comprehensive course on mindfulness in project management, 
+            focusing on the integration of mindfulness practices to enhance project outcomes and team dynamics.</li><br>
+            <li>Gained insights into mindfulness techniques tailored specifically for project managers, including stress reduction,
+             improved focus, and effective communication.</li><br><li>Equipped with strategies to promote resilience, collaboration, 
+             and overall well-being in project environments.</li></ul></p>
+    </section>
+    <section id="skills" class="section-box">
+        <h2>Skills</h2>
+        <h3>Technical Skills</h3>
+        <p><ul><li>Webpage development
+            using ChatGPT</li>
+            <li>Python(beginner)</li>
+        <li>Prompt Engineering</li></ul></p>
+        <h3>Software Known</h3><p><ul><li>Notion</li><li>Canva</li><li>MS Word <li> Chat GPT
+        </li></ul></p>
+        <h3>Soft Skills</h3><p><ul><li>Leadership</li> <li>Hardworking </li> <li>Time Management </li><li> Productivity </li><li>Journaling</li><li> Event Organization</li></ul></p>
+        </section>
+    <section id="achievements" class="section-box">
+        <h2>Achievements</h2>
+        <p><ul>
+           <li> Secured <b>1st prize</b>for presenting "Fisherman Border
+            Crossing Alert System" at AHAVA-2023, Rajas Institute of
+            Technology, Nagercoil.</li><br>
+            <li>Achieved <b>2nd prize</b> for presenting "Social Media Privacy
+                under Web 3.0" at a National symposium, PSN Institute of
+                Technology, Palayamkotai.</li></ul></p>
+    </section>
+    <section id="papers" class="section-box">
+        <h2>Papers Published</h2>
+        <p>
+            <b>Fisherman Border Crossing Alert System</b> - September 2023<br><ul><li>Has been Published in JICR JOURNAL, VOLUME XV, ISSUE IX, SEPTEMBER-2023. </li>
+            <li>The journal is UGC - CARE approved.</li><li>ISSN NO: 0022-1945</li><li>Co-authored with 4 colleagues.</li><br>
+          </ul></p>
+    </section>
+    <section id="contact" class="section-box">
+        <h2>Contact</h2>
+        <p>You can contact me via:</p>
+        <ul>
+            <li><b>Email: </b>libinmlofficial@gmail.com</li>
+            <li><b>Mobile No: </b>7539907741</li>
+            <li><b>LinkedIn: </b>linkedin.com/in/libin-m-l-224813213</li>
+            <li><b>GitHub: </b>https://github.com/Libin-TechExplorer</li>
+            <li><b>Address: </b>Xavierpuram, Thiruvithancode Post</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var dropdownContent = document.getElementById("dropdown-content");
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
