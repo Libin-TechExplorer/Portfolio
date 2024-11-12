@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Services</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script defer src="Togglenavformobile.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="services.js"></script>
+
+
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html" class="logo">Libin's Portfolio</a>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+        
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="https://drive.google.com/file/d/1L8s-N6ajWSarfvJWe2BXX8qSpF2UnD82/view?usp=sharing" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <div class="logo">Libin's Portfolio</div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span class="hamburger-icon"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="https://drive.google.com/file/d/1L8s-N6ajWSarfvJWe2BXX8qSpF2UnD82/view?usp=sharing" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="services-title">My Services</h2>
+        <p class="services-subtitle">What Can I Do</p>
+        <div class="services-container">
+            <div class="service-box">
+                <div class="icon-container">
+                    <i class="fas fa-cross"></i>  <!-- Example Icon -->
+                </div>
+                <h4>Sharing About Jesus</h4>
+                <p>Solution for all your problems</p>
+                <p>Free</p>
+                <button onclick="openModal('jesus')" class="service-modal-btn">Read More</button>
+            </div>
+            
+            <div class="service-box">
+                <div class="icon-container">
+                    <i class="fas fa-clock"></i> <!-- Example Icon -->
+                </div>
+                <h4>Productivity Tips</h4>
+                <p>Boost your productivity with free tips and strategies.</p>
+                <p>Free</p>
+                <button onclick="openModal('productivity')" class="service-modal-btn">Read More</button>
+            </div>
+            
+            <div class="service-box">
+                <div class="icon-container">
+                    <i class="fas fa-database"></i> <!-- Example Icon -->
+                </div>
+                <h4>Notion Help</h4>
+                <p>Clarify your doubts in Notion.</p>
+                <p>Paid</p>
+                <button onclick="openModal('notion')" class="service-modal-btn">Read More</button>
+            </div>
+
+    </section>
+<!-- Modal Structure -->
+<div id="serviceModal" class="service-box-modal">
+    <div class="service-content-modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h3 id="modal-title">Service Title</h3>
+        <p id="modal-description">Detailed description of the service.</p>
+        <p id="modal-status">Free or Paid</p>
+        <a href="https://wa.me/6369662654" id="whatsapp-link" target="_blank" class="service-modal-btn">Contact on WhatsApp</a>
+    </div>
+</div>
+
+
+   <!-- Contact Info -->
+   <div class="contact-links-wrapper">
+    <a href="https://linkedin.com/in/libin-m-l-224813213" target="_blank" class="contact-link">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="mailto:libinmlofficial@gmail.com" target="_blank" class="contact-link">
+        <i class="fas fa-envelope"></i> Email
+    </a>
+    <a href="https://wa.me/6369662654" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+    <a href="https://github.com/Libin-TechExplorer" target="_blank" class="contact-link">
+        <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://www.instagram.com/libinml_official/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
