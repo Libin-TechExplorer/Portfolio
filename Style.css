@@ -830,7 +830,7 @@ nav ul li a.active {
     /* About Popup Modal for Mobile */
     .popup-content {
         width: 85%; /* Full width with slight padding on the sides */
-        height: 48%;
+        height: 53%;
         padding: 10px; /* Reduce padding for mobile */
         font-size: 1rem; /* Adjust font size for mobile readability */
     }
